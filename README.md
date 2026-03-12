@@ -51,14 +51,8 @@ Click and hold the title bar of the popup to drag it around, or drag the bottom-
 
 🛠️ Technical Architecture & File Structure
 
-This is a native, vanilla frontend Chrome extension built on Manifest V3:
 
-Key Technical Breakthroughs:
-
-Dynamic Stream Interception: Utilizes MutationObserver combined with a Debounce timer to perfectly solve the issue of failing to capture the complete DOM due to the AI's "typewriter" output effect.
-
-Intent Recognition Algorithm: Abandons simple string comparison in favor of weighted matching by extracting English characters/command keywords, greatly improving the fault tolerance for code-related queries from developers.
 
 # 📄 License
 
-This project is open-sourced under the MIT License. Feel free to use, modify, and distribute it. If you find it helpful, please give it a ⭐ Star!
+This project is open-sourced under the MIT License. Feel free to use it. If you find it helpful, please give it a ⭐ Star!
