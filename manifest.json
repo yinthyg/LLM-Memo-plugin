@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Memo AI备忘录",
+  "version": "1.0",
+  "description": "自动记录并在你重复提问时弹出历史答案",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://chatgpt.com/*",
+    "*://gemini.google.com/*",
+    "*://chat.deepseek.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://chatgpt.com/*",
+        "*://gemini.google.com/*",
+        "*://chat.deepseek.com/*"
+      ],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
