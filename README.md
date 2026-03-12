@@ -1,8 +1,8 @@
-🧠 Auto-Memo (Chrome Extension)
+### 🧠 Auto-Memo (Chrome Extension)
 
 Your invisible AI chat secretary. When using ChatGPT, Gemini, or DeepSeek, we often find ourselves asking the same basic questions repeatedly (e.g., "How to set 777 permissions using chmod?", "What's the command to enter a docker container?"). Auto-Memo automatically detects these repetitive queries and pops up a concise historical answer (prioritizing code blocks) in the top right corner of your page, saving you from reading through long, generated paragraphs all over again.
 
-✨ Core Features
+# ✨ Core Features
 
 🤖 Multi-Platform Support: Perfectly compatible with ChatGPT, Gemini, and DeepSeek.
 
@@ -18,7 +18,7 @@ Your invisible AI chat secretary. When using ChatGPT, Gemini, or DeepSeek, we of
 
 🚀 Installation Guide (Developer Mode)
 
-Since the extension is not yet published on the Chrome Web Store, please follow these steps for local installation:
+## Since the extension is not yet published on the Chrome Web Store, please follow these steps for local installation:
 
 Download the Project
 Download or clone all the code from this repository into a local folder (e.g., named auto-memo).
@@ -35,7 +35,7 @@ Click the "Load unpacked" button in the top left corner and select the auto-memo
 Complete Installation
 You should now see "Auto-Memo" appear in your list of extensions! Simply refresh your AI chat web page for it to take effect.
 
-💡 Usage Instructions
+## 💡 Usage Instructions
 
 Open ChatGPT, Gemini, or DeepSeek.
 
@@ -53,27 +53,12 @@ Click and hold the title bar of the popup to drag it around, or drag the bottom-
 
 This is a native, vanilla frontend Chrome extension built on Manifest V3:
 
-📦 auto-memo
- ┣ 📜 manifest.json   # Extension configuration, defines permissions and injection rules
- ┣ 📜 content.js      # Core logic script: input interception, similarity algorithm, DOM observer, popup rendering
- ┣ 📜 style.css       # Stylesheet: defines the appearance, animations, and drag/resize styles of the floating window
- ┗ 📜 README.md       # Project documentation
-
-
 Key Technical Breakthroughs:
 
 Dynamic Stream Interception: Utilizes MutationObserver combined with a Debounce timer to perfectly solve the issue of failing to capture the complete DOM due to the AI's "typewriter" output effect.
 
 Intent Recognition Algorithm: Abandons simple string comparison in favor of weighted matching by extracting English characters/command keywords, greatly improving the fault tolerance for code-related queries from developers.
 
-📝 TODO / Future Plans
-
-[ ] Add support to click the extension icon to open a global memory panel for managing/deleting/searching historical memos.
-
-[ ] Support more AI platforms (e.g., Claude, Kimi, etc.).
-
-[ ] Add Syntax Highlighting for code blocks.
-
-📄 License
+# 📄 License
 
 This project is open-sourced under the MIT License. Feel free to use, modify, and distribute it. If you find it helpful, please give it a ⭐ Star!
